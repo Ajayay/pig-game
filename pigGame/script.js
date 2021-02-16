@@ -65,7 +65,7 @@ function onDiceHold() {
     playerMainScore[activePlayer] += currentScore;
     document.getElementById(`score--${activePlayer}`).textContent =
       playerMainScore[activePlayer];
-    if (playerMainScore[activePlayer] >= 10) {
+    if (playerMainScore[activePlayer] >= 100) {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add('player--winner');
