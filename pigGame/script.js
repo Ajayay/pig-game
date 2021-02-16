@@ -8,6 +8,8 @@ const diceElement = document.querySelector('.dice');
 const rollDiceButton = document.querySelector('.btn--roll');
 const holdDiceButton = document.querySelector('.btn--hold');
 const newGameButton = document.querySelector('.btn--new');
+const playerName0 = document.getElementById('name--0');
+const playerName1 = document.getElementById('name--1');
 
 //initialize variables for player's and current's score logic
 let playerMainScore = [0, 0];
@@ -38,6 +40,18 @@ const switchPlayer = function() {
 };
 
 // ask player for names
+let userName = '';
+playerName0.addEventListener('click', changePlayer0Name);
+playerName1.addEventListener('click', changePlayer1Name);
+function changePlayer0Name() {
+  userName = prompt('enter player1 name');
+  playerName0.textContent = userName;
+}
+
+function changePlayer1Name() {
+  userName = prompt('enter player2 name');
+  playerName1.textContent = userName;
+}
 
 //add event listner for roll dice button
 rollDiceButton.addEventListener('click', onDiceRoll);
