@@ -10,6 +10,6 @@ Reference: https://github.com/jonasschmedtmann/complete-javascript-course/tree/m
 
 ##Additional Feature
 
-1. Set the name of the user.
+1. Set the name of the user. (raw)
 
-demo : 
+demo : https://vigorous-goldstine-13148a.netlify.app/
